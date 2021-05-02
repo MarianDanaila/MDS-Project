@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AlgoVisualizer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2 class="heading">Sorting visualizer</h2>
+    <div id="nav-bar">
+      <button type="button" id="generator" class="btn btn-primary">
+        New Array
+      </button>
+      <label class="sr-only">Length</label>
+      <input type="range" id="length" min="1" max="5" value="3" />
+      <label class="sr-only">Speed</label>
+      <input type="range" id="speed" min="1" max="5" step="1" value="3" />
+      <button type="button" class="btn btn-info bubble sort">
+        Bubble Sort
+      </button>
+      <button type="button" class="btn btn-info selection sort">
+        Selection Sort
+      </button>
+      <button type="button" class="btn btn-info insertion sort">
+        Insertion Sort
+      </button>
+      <button type="button" class="btn btn-info quick sort">Quick Sort</button>
+      <button type="button" class="btn btn-info merge sort">Merge Sort</button>
+    </div>
+    <div id="bar"></div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body {
+  background-color: #3f3697;
+}
+
+.heading {
+  margin: 5px auto;
+  text-align: center;
+  text-transform: capitalize;
+  color: aliceblue;
+}
+
+.sort {
+  float: right;
+}
+
+.btn {
+  margin: 10px;
+}

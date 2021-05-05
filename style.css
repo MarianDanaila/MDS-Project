@@ -16,3 +16,15 @@ body {
 .btn {
   margin: 10px;
 }
+
+#bars {
+  margin: 100px 10px;
+}
+
+.special {
+  float: left;
+  background: rgb(0, 255, 55);
+  margin: 0;
+  opacity: 0.7;
+  border: 1px solid black;
+}

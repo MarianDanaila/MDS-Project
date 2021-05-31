@@ -4,11 +4,8 @@ function swap(el1, el2) {
   const style1 = window.getComputedStyle(el1);
   const style2 = window.getComputedStyle(el2);
 
-  //  window.setTimeout(function(){
   const transform1 = style1.getPropertyValue("height");
   const transform2 = style2.getPropertyValue("height");
-  // } ,delay);
-
   el1.style.height = transform2;
   el2.style.height = transform1;
 }
@@ -31,8 +28,6 @@ async function selection_sort(
           resolve();
         }, delay1)
       );
-      //  special[j].style.background="yellow";
-      // special[min_idx].style.background="yellow";
       if (arr[j] < arr[min_idx]) {
         if (min_idx != i) special[min_idx].style.background = "yellow";
         min_idx = j;
@@ -41,8 +36,6 @@ async function selection_sort(
       if (j != min_idx) special[j].style.background = "yellow";
     }
     special[min_idx].style.background = "red";
-
-    // special[i].style.background="green";
     await new Promise((resolve) =>
       setTimeout(() => {
         resolve();

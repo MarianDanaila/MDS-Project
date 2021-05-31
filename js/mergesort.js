@@ -5,10 +5,8 @@ function swap(el1, el2) {
   const style1 = window.getComputedStyle(el1);
   const style2 = window.getComputedStyle(el2);
 
-  //  window.setTimeout(function(){
   const transform1 = style1.getPropertyValue("height");
   const transform2 = style2.getPropertyValue("height");
-  // } ,delay);
 
   el1.style.height = transform2;
   el2.style.height = transform1;
@@ -54,7 +52,6 @@ async function merge_arr(
         arr[k] = arr[k - 1];
         special = document.querySelectorAll(".special");
       }
-      //  await change(special[i],temp_special);
       special[i].style.height = transform2;
       await new Promise((resolve) =>
         setTimeout(() => {
@@ -79,10 +76,9 @@ async function merge_arr(
   }
 }
 
-async function merge_sort(low, high, delay2 = 1000) {
+async function merge_sort(low, high) {
   if (low < high) {
     var mid = Math.floor(low + (high - low) / 2);
-    //  console.log(mid);
     await merge_sort(low, mid);
     await merge_sort(mid + 1, high);
     await merge_arr(low, mid, high);

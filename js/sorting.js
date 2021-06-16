@@ -26,7 +26,7 @@ function create_bars() {
 
   // Set the height
   // we will sort the bars on the basis of height
-  for (var i = 0; i < no_of_bar; i++) arr.push(Math.floor(Math.random() * 100));
+  for (let i = 0; i < no_of_bar; i++) arr.push(Math.floor(Math.random() * 100));
 
   //Set the height and width of visible bars
   for (var i = 0; i < no_of_bar; i++) {
